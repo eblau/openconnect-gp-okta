@@ -157,7 +157,8 @@ def main(gateway, openconnect_args, username, password, factor_priorities, totp_
         '--protocol=gp',
         '--user=' + saml_username,
         '--usergroup=gateway:prelogin-cookie',
-        '--passwd-on-stdin'
+        '--passwd-on-stdin',
+        '-b'
     ] + list(openconnect_args)
 
     if sudo:
