@@ -395,8 +395,7 @@ def main(
         '--protocol=gp',
         '--user=' + saml_username,
         '--usergroup=gateway:prelogin-cookie',
-        '--passwd-on-stdin',
-        '-b'
+        '--passwd-on-stdin'
     ] + list(cert_args) + list(openconnect_args)
 
     if sudo:
